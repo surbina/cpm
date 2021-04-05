@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "rm out.json && node index.mjs &> out.json"
+    "start": "npm run generate-json && npm run generate-csv",
+    "generate-json": "rm out.json && node ./generateJson.mjs &> out.json",
+    "generate-csv": "rm out.csv && node ./generateCSV.mjs &> out.csv"
   },
   "keywords": [],
   "author": "",

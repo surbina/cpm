@@ -2,9 +2,7 @@ import { table } from "./wbs.mjs";
 
 const lastNode = table.getCriticalPath("73");
 
-const printData = { data: convertToArray(lastNode) };
-
-console.log(JSON.stringify(printData, null, 2));
+export const printData = { data: convertToArray(lastNode) };
 
 function convertToArray(lastNode) {
   const visited = {};
