@@ -15,7 +15,7 @@ const data = [
   { id: "9", predecessors: ["2", "6"], duration: 9 },
   { id: "10", predecessors: ["5"], duration: 8 },
   /* Iteracion 1 */
-  { id: "11", predecessors: ["8"], duration: 3 },
+  { id: "11", predecessors: ["7", "8"], duration: 3 },
   { id: "12", predecessors: ["8"], duration: 3 },
   { id: "13", predecessors: ["11"], duration: 2 },
   { id: "14", predecessors: ["13"], duration: 16 },

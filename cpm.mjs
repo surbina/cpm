@@ -1,3 +1,5 @@
+// https://gist.github.com/perico/7790396
+
 /**
  * Implementation of the Critical Path Method (CPM) with variation
  * @see http://en.wikipedia.org/wiki/Critical_path_method
@@ -19,7 +21,6 @@ function Activity(configs) {
   configs = configs || {};
   self.id = configs.id;
   self.duration = configs.duration;
-  self.description = configs.description || "";
   self.est = configs.est; //Earliest Start Time
   self.lst = configs.lst; //Latest Start Time
   self.eet = configs.eet; //Earliest End Time
@@ -213,4 +214,3 @@ function ActivityList() {
 }
 
 export { ActivityList, Activity };
-// module.export = { ActivityList, Activity };

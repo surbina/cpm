@@ -1,22 +1,12 @@
-// import { table, table2 } from "./graph";
 import { table } from "./wbs.mjs";
 
-// console.log({ table });
+const lastNode = table.getCriticalPath("73");
 
-// console.log("TABLE", table.getList());
-const n73 = table.getCriticalPath("8");
-// const n72 = n73.predecessors[0];
-// const n71 = n72.predecessors[0];
+const printData = { data: convertToArray(lastNode) };
 
-// console.log("73: ", n73);
-// console.log("72: ", n72);
-// console.log("71: ", n71);
+console.log(JSON.stringify(printData, null, 2));
 
-const printData = { data: getTable(n73) };
-
-console.log(JSON.stringify(printData));
-
-function getTable(lastNode) {
+function convertToArray(lastNode) {
   const visited = {};
   const queue = [lastNode];
   const output = [];
