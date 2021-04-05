@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run generate-json && npm run generate-csv",
-    "generate-json": "rm out.json && node ./generateJson.mjs &> out.json",
-    "generate-csv": "rm out.csv && node ./generateCSV.mjs &> out.csv"
+    "start": "npm run generate-json && npm run generate-csv && npm run generate-full-list",
+    "generate-json": "rm critical-path.json && node ./generateJson.mjs &> critical-path.json",
+    "generate-csv": "rm critical-path.csv && node ./generateCSV.mjs &> critical-path.csv",
+    "generate-full-list": "rm full-list.csv && node ./generateFullList.mjs &> full-list.csv"
   },
   "keywords": [],
   "author": "",

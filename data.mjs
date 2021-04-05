@@ -4,6 +4,8 @@ const lastNode = table.getCriticalPath("73");
 
 export const printData = { data: convertToArray(lastNode) };
 
+export { table };
+
 function convertToArray(lastNode) {
   const visited = {};
   const queue = [lastNode];
